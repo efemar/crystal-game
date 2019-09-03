@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+</head>
+
+<body>
+
+
+    <h1>Crystals Collector</h1>
+
+    <div class="container">
+        <h2>Instructions on how to play the game:</h2>
+        <div class="class instructions">
+            <ol>
+                <li>
+                    <p>Click any of the crystals to start the game</p>
+
+                </li>
+
+                <li>
+                    <p>You will be given a random number at the start of the game.</p>
+
+                </li>
+
+                <li>
+                    <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points
+                        to your total score</p>
+                </li>
+
+
+                <li>
+                    <p>You win the game by matching your total score to random number. You lose the game if your total
+                        score goes above the random number</p>
+                </li>
+                <li>
+                    <p>The value of each crystal is hidden from you until you click on it</p>
+                </li>
+                <li>
+                    <p>The value of each crystal will change upon every new round.</p>
+                </li>
+            </ol>
+
+            <h3> May the Crystals Be With You! </h3>
+        </div>
+
+        <div class="row-3">
+            <div class="random-col-md-6">
+                <p id="comp-number"></p>
+            </div>
+
+            <div class="score-col-md-6">
+                <p id="message"> <span><strong> Good Luck! </strong></span></p>
+                <p id="Wins"> Wins: <span> 0 </span></p>
+                <p id="Losses"> Losses: <span> 0 </span></p>
+
+
+            </div>
+        </div>
+
+
+        <div class="pic-crystals">
+            <img src="assets/images/Screenshot 2019-09-02 13.41.32.png" class="reponsive" id="garnet" alt="garnet">
+            <img src="assets/images/Screenshot 2019-09-02 13.41.41.png" class="reponsive" id="amethyst" alt="amethyst">
+            <img src="assets/images/Screenshot 2019-09-02 13.41.46.png" class="reponsive" id="bloodstone"
+                alt="bloodstone">
+            <img src="assets/images/Screenshot 2019-09-02 13.41.51.png" class="reponsive" id="sapphire" alt="sapphire">
+        </div>
+
+        <div class="total-score">
+            <h4>Your total score:</h4>
+
+        </div>
+        <div class="user-number">
+            <p id="userNumber"> <span> 0 </span></p>
+        </div>
+
+    </div>
+
+
+
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            var wins = 0;
+            var lose = 0;
+            var totalScore = 0
+
+            $("#garnet, #amethyst, #bloodstone, #sapphire").on("click", function () {
+                //alert("the game has started");
+
+                //Generate a random number for the computer
+
+                var targetNumber = Math.floor((Math.random() * 120) + 19);
+                //alert("this random number: " + targetNumber );
+
+
+                //Display that number in the correct html section
+                $("#comp-number").text(targetNumber);
+            })
+
+                
+            $("#garnet, #amethyst, #bloodstone, #sapphire").on("click", function () {
+            //Generate a random number for each crystal
+             garnetNum = Math.floor((Math.random() * 12) + 1);
+             amethystNum = Math.floor((Math.random() * 12) + 1);
+             bloodstoneNum = Math.floor((Math.random() * 12) + 1);
+             sapphineNum = Math.floor((Math.random() * 12) + 1);
+             totalScore = garnetNum + amethystNum + bloodstoneNum + sapphineNum;
+
+         
+            $("user-number").text(totalScore1);
+                
+
+        })
+
+
+
+
+
+
+            //Compare when the user has won or lost
+
+    </script>
+
+</body>
+
+</html>
