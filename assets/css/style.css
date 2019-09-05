@@ -3,17 +3,45 @@
     body {
         background: url("../images/watercolour-1325656_1920.jpg");
         background-blend-mode: lighten;
+        width: 80%;
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+        height: 500px;
     }
 
+    p {
+        margin-bottom: 15px;
+        font-size: 20px;
+
+    }
+
+
+    h2 {
+        font-weight: bold;
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    #play-button {
+        clear: both;
+        margin-left: auto;
+        margin-right: auto;
+        height:50px;
+        width: 50px;
+        margin-bottom: 20px; 
+    }
     .container {
-        max-width: 960px;
+        height: auto;
         margin: auto;
     }
 
     h1 {
         text-align: center;
         font-size: 50px;
+        margin-bottom: 30px;
     }
+
 
     .pic-crystals {
        clear: both;
@@ -34,11 +62,12 @@
         float: left;
         background-color: white;
         height: 120px;
-        width: 120px;
+        width: 140px;
+        padding-top: 20px;
         margin-top: 0px;
         margin-right: 10px;
         margin-bottom: 10px;
-        padding: 10px;
+        text-align: center;
 
     }
 
@@ -46,12 +75,25 @@
         float: left;
         background-color: white;
         height: 120px;
-        width: 120px;
-        padding: 10px;
+        width: 140px;
+        padding-top: 20px;
+        margin-top: 0px;
+        margin-right: 10px;
+        margin-bottom: 10px;
         text-align: center;
 
     }
 
     .score-col-md-6 p {
         z-index: 90;
+    }
+
+    .user-number {
+        float: left;
+        background-color: white;
+        height: 40px;
+        width: 60px;
+        padding: 20px;
+        text-align: center;
+
     }

@@ -21,12 +21,14 @@
     <h1>Crystals Collector</h1>
 
     <div class="container">
+
         <h2>Instructions on how to play the game:</h2>
-        <div class="class instructions">
+
+        <div class="row1">
             <ol>
                 <li>
-                    <p>Click any of the crystals to start the game</p>
-
+                    <p id="first">Click on the play button to start the game:</p>
+                    <img id="play-button" src="assets/images/play-2935460_1280.png" alt="play-button">
                 </li>
 
                 <li>
@@ -38,11 +40,13 @@
                     <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points
                         to your total score</p>
                 </li>
+                <li>
+                    <p>You lose the game if your total score goes above the random number</p>
 
+                </li>
 
                 <li>
-                    <p>You win the game by matching your total score to random number. You lose the game if your total
-                        score goes above the random number</p>
+                    <p>You win the game by matching your total score to random number. </p>
                 </li>
                 <li>
                     <p>The value of each crystal is hidden from you until you click on it</p>
@@ -52,7 +56,7 @@
                 </li>
             </ol>
 
-            <h3> May the Crystals Be With You! </h3>
+            <h2> May the Crystals Be With You! </h2>
         </div>
 
         <div class="row-3">
@@ -62,8 +66,8 @@
 
             <div class="score-col-md-6">
                 <p id="message"> <span><strong> Good Luck! </strong></span></p>
-                <p id="Wins"> Wins: <span> 0 </span></p>
-                <p id="Losses"> Losses: <span> 0 </span></p>
+                <p> Wins: <span id="wins"> 0 </span></p>
+                <p> Losses: <span id="losses"> 0 </span></p>
 
 
             </div>
@@ -89,50 +93,7 @@
     </div>
 
 
-
-    <script type="text/javascript">
-
-        $(document).ready(function () {
-            var wins = 0;
-            var lose = 0;
-            var totalScore = 0
-
-            $("#garnet, #amethyst, #bloodstone, #sapphire").on("click", function () {
-                //alert("the game has started");
-
-                //Generate a random number for the computer
-
-                var targetNumber = Math.floor((Math.random() * 120) + 19);
-                //alert("this random number: " + targetNumber );
-
-
-                //Display that number in the correct html section
-                $("#comp-number").text(targetNumber);
-            })
-
-                
-            $("#garnet, #amethyst, #bloodstone, #sapphire").on("click", function () {
-            //Generate a random number for each crystal
-             garnetNum = Math.floor((Math.random() * 12) + 1);
-             amethystNum = Math.floor((Math.random() * 12) + 1);
-             bloodstoneNum = Math.floor((Math.random() * 12) + 1);
-             sapphineNum = Math.floor((Math.random() * 12) + 1);
-             totalScore = garnetNum + amethystNum + bloodstoneNum + sapphineNum;
-
-         
-            $("user-number").text(totalScore1);
-                
-
-        })
-
-
-
-
-
-
-            //Compare when the user has won or lost
-
-    </script>
+<script src="assets/javascript/game.js"></script>
 
 </body>
 
