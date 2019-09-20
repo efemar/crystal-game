@@ -53,6 +53,10 @@
         float: left;
     }
 
+    #message {
+        margin-top: -10px;
+
+    }
     #sapphire, #garnet, #bloodstone, #amethyst {
         height: 150px;
         width: 150px;
@@ -84,9 +88,9 @@
 
     }
 
-    .score-col-md-6 p {
+    /* .score-col-md-6 p {
         z-index: 90;
-    }
+    } */
 
     .user-number {
         float: left;
