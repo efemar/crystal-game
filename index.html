@@ -22,84 +22,92 @@
 </head>
 
 <body>
-
-
-    <h1>Crystals Collector</h1>
-
     <div class="container">
+        <div class="jumbotron">
+            <h1 class="display-4">Crystals Collector</h1>
+            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention
+                to featured content or information.</p>
+            <hr class="my-4">
 
-        <h2>Instructions on how to play the game:</h2>
-
-        <div class="row">
-            <ol>
-                <li>
-                    <p id="first">Click on the play button to start the game:</p>
-                    <img id="play-button" src="assets/images/play-2935460_1280.png" alt="play-button">
-                </li>
-
-                <li>
-                    <p>You will be given a random number at the start of the game.</p>
-
-                </li>
-
-                <li>
-                    <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points
-                        to your total score</p>
-                </li>
-                <li>
-                    <p>You lose the game if your total score goes above the random number</p>
-
-                </li>
-
-                <li>
-                    <p>You win the game by matching your total score to random number. </p>
-                </li>
-                <li>
-                    <p>The value of each crystal is hidden from you until you click on it</p>
-                </li>
-                <li>
-                    <p>The value of each crystal will change upon every new round.</p>
-                </li>
-            </ol>
-
-            <h2> May the Crystals Be With You! </h2>
         </div>
 
-        <div class="row">
-            <div class="random-col-md-6">
-                <p id="comp-number"></p>
+
+
+            <h2>Instructions on how to play the game:</h2>
+
+            <div class="row">
+                <ol>
+                    <li>
+                        <p id="first">Click on the play button to start the game:</p>
+                        <img id="play-button" src="assets/images/play-2935460_1280.png" alt="play-button">
+                    </li>
+
+                    <li>
+                        <p>You will be given a random number at the start of the game.</p>
+
+                    </li>
+
+                    <li>
+                        <p>There are four crystals below. By clicking on a crystal you will add a specific amount of
+                            points
+                            to your total score</p>
+                    </li>
+                    <li>
+                        <p>You lose the game if your total score goes above the random number</p>
+
+                    </li>
+
+                    <li>
+                        <p>You win the game by matching your total score to the random number. </p>
+                    </li>
+                    <li>
+                        <p>The value of each crystal is hidden from you until you click on it</p>
+                    </li>
+                    <li>
+                        <p>The value of each crystal will change upon every new round.</p>
+                    </li>
+                </ol>
+
+                <h2> May the Crystals Be With You! </h2>
             </div>
 
-            <div class="score-col-md-6">
-                <p id="message"> <span><strong> Good Luck! </strong></span></p>
-                <p> Wins: <span id="wins"> 0 </span></p>
-                <p> Losses: <span id="losses"> 0 </span></p>
+            <div class="row">
+                <div class="random-col-md-6">
+                    <p id="comp-number"></p>
+                </div>
 
+                <div class="score-col-md-6">
+                    <p id="message"> <span><strong> Good Luck! </strong></span></p>
+                    <p> Wins: <span id="wins"> 0 </span></p>
+                    <p> Losses: <span id="losses"> 0 </span></p>
+
+                </div>
+
+            </div>
+
+
+            <div class="pic-crystals">
+                <img src="assets/images/Screenshot 2019-09-02 13.41.32.png" class="reponsive" id="garnet" alt="garnet">
+                <img src="assets/images/Screenshot 2019-09-02 13.41.41.png" class="reponsive" id="amethyst"
+                    alt="amethyst">
+                <img src="assets/images/Screenshot 2019-09-02 13.41.46.png" class="reponsive" id="bloodstone"
+                    alt="bloodstone">
+                <img src="assets/images/Screenshot 2019-09-02 13.41.51.png" class="reponsive" id="sapphire"
+                    alt="sapphire">
+            </div>
+
+            <div class="total-score">
+                <h4>Your total score:</h4>
+
+            </div>
+            <div class="user-number">
+                <p id="userNumber"> <span> 0 </span></p>
             </div>
 
         </div>
 
 
-        <div class="pic-crystals">
-            <img src="assets/images/Screenshot 2019-09-02 13.41.32.png" class="reponsive" id="garnet" alt="garnet">
-            <img src="assets/images/Screenshot 2019-09-02 13.41.41.png" class="reponsive" id="amethyst" alt="amethyst">
-            <img src="assets/images/Screenshot 2019-09-02 13.41.46.png" class="reponsive" id="bloodstone"
-                alt="bloodstone">
-            <img src="assets/images/Screenshot 2019-09-02 13.41.51.png" class="reponsive" id="sapphire" alt="sapphire">
-        </div>
-
-        <div class="total-score">
-            <h4>Your total score:</h4>
-
-        </div>
-        <div class="user-number">
-            <p id="userNumber"> <span> 0 </span></p>
-        </div>
-
-    </div>
-
-
-    <script src="assets/javascript/game.js"></script>
+        <script src="assets/javascript/game.js"></script>
 
 </body>
 
